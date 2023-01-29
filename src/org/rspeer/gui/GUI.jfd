@@ -1,0 +1,188 @@
+JFDML JFormDesigner: "6.0.6.4.204" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			"title": "AstScouter"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,hidemode 3,align center center"
+					"$columnConstraints": "[fill][fill]"
+					"$rowConstraints": "[][]"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "flowy,hidemode 3,align center center"
+						"$columnConstraints": "[fill]"
+						"$rowConstraints": "[][][]"
+					} ) {
+						name: "worldSettingsPanel"
+						"border": new javax.swing.border.TitledBorder( new javax.swing.border.EtchedBorder( 1, null, null ), "World Settings", 2, 0 )
+						"minimumSize": new java.awt.Dimension( 130, 130 )
+						"preferredSize": new java.awt.Dimension( 120, 130 )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "worldStart"
+							"model": new javax.swing.SpinnerNumberModel {
+								minimum: 301
+								value: 301
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0,align center center,grow 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label2"
+							"text": "TO"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1,align center center,grow 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "worldEnd"
+							"model": new javax.swing.SpinnerNumberModel {
+								minimum: 301
+								value: 301
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2,align center center,grow 0 0"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3,align center center"
+						"$columnConstraints": "[fill]"
+						"$rowConstraints": "[][][][]"
+					} ) {
+						name: "discordPanel"
+						"minimumSize": new java.awt.Dimension( 250, 130 )
+						"preferredSize": new java.awt.Dimension( 250, 130 )
+						"border": new javax.swing.border.TitledBorder( new javax.swing.border.EtchedBorder( 1, null, null ), "Discord Bot Settings", 2, 0 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label4"
+							"text": "Server Token"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0,align center center,grow 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "serverTokenId"
+							"minimumSize": new java.awt.Dimension( 200, 25 )
+							"preferredSize": new java.awt.Dimension( 200, 25 )
+							"horizontalAlignment": 0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1,align center center,grow 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label7"
+							"text": "Channel ID"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2,align center center,grow 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "serverChannelId"
+							"horizontalAlignment": 0
+							"preferredSize": new java.awt.Dimension( 200, 25 )
+							"minimumSize": new java.awt.Dimension( 200, 25 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 3,align center center,grow 0 0"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 0,grow"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3,align center center"
+						"$columnConstraints": "[fill]"
+						"$rowConstraints": "[][][][]"
+					} ) {
+						name: "gpPanel"
+						"border": new javax.swing.border.TitledBorder( new javax.swing.border.EtchedBorder( 1, null, null ), "Value (M)", 2, 0 )
+						"minimumSize": new java.awt.Dimension( 150, 130 )
+						"preferredSize": new java.awt.Dimension( 130, 130 )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "minValue"
+							"model": new javax.swing.SpinnerNumberModel {
+								minimum: 1
+								value: 1
+							}
+							"minimumSize": new java.awt.Dimension( 85, 32 )
+							"maximumSize": new java.awt.Dimension( 120, 32 )
+							"preferredSize": new java.awt.Dimension( 85, 32 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0,align center center,grow 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label1"
+							"text": "TO"
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1,align center center,grow 0 0"
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "maxValue"
+							"model": new javax.swing.SpinnerNumberModel {
+								minimum: 1
+								value: 1
+							}
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 2"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 1,align center center,grow 0 0"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+						"$layoutConstraints": "hidemode 3,align center center"
+						"$columnConstraints": "[fill]"
+						"$rowConstraints": "[][]"
+					} ) {
+						name: "fileSettingsPanel"
+						"border": new javax.swing.border.TitledBorder( new javax.swing.border.EtchedBorder( 1, null, null ), "File Settings", 2, 0 )
+						"minimumSize": new java.awt.Dimension( 250, 130 )
+						"preferredSize": new java.awt.Dimension( 250, 130 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label3"
+							"text": "Leech File Name"
+							"horizontalAlignment": 0
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 0,grow"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "leechFileName"
+							"horizontalAlignment": 0
+							"minimumSize": new java.awt.Dimension( 200, 20 )
+							"preferredSize": new java.awt.Dimension( 200, 25 )
+						}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+							"value": "cell 0 1,align center center,grow 0 0"
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 2 1,align center center,grow 0 0"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+					"$layoutConstraints": "insets dialog,alignx right"
+					"$columnConstraints": "[button,fill]"
+					"$rowSpecs": "[fill]"
+				} ) {
+					name: "buttonBar"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "startBtn"
+						"text": "START"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startBtnActionPerformed", false ) )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 1 0"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 555, 425 )
+		} )
+	}
+}
